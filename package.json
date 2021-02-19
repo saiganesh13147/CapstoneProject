@@ -1,0 +1,22 @@
+{
+  "name": "capstone",
+  "version": "1.0.0",
+  "description": "MERN Sello MarketPlace",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiganesh13147/CapstoneProject.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saiganesh13147/CapstoneProject/issues"
+  },
+  "homepage": "https://github.com/saiganesh13147/CapstoneProject#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

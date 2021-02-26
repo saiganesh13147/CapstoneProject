@@ -1,20 +1,24 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 import Rating from '../components/Rating'
-import axios from 'axios'
+import products from '../products'
 
 const ProductScreen = ({ match }) => {
-  const [product, setProduct] = useState({})
+  const product = products.find((p) => p._id === match.params.id)
 
-  useEffect(() => {
-    const fetchProduct = async () => {
-      const { data } = await axios.get(`api/products/${match.params.id}`)
+  //   const [products, setProducts] = useState([])
 
-      setProduct(data)
-    }
-    fetchProduct()
-  }, [])
+  //   useEffect(() => {
+  //     const fetchProducts = async () => {
+  //       const { data } = await axios.get('api/products')
+
+  //       setProducts(data)
+  //     }
+  //     fetchProducts()
+  //   }, [])
+
+  console.log(product)
   return (
     <div>
       <LinkContainer to='/'>
@@ -36,7 +40,7 @@ const ProductScreen = ({ match }) => {
               ></Rating>
             </ListGroup.Item>
             <ListGroup.Item>Price : ${product.price}</ListGroup.Item>
-            <ListGroup.Item>Price : ${product.description}</ListGroup.Item>
+            <ListGroup.Item>Description : {product.description}</ListGroup.Item>
           </ListGroup>
         </Col>
       </Row>

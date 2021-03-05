@@ -21,3 +21,9 @@ h3 {
 .rating span {
   margin: 0.1rem;
 }
+.carousel-item {
+  /* position: relative;
+  width: 100%;
+  overflow: hidden; */
+  height: 400px;
+}

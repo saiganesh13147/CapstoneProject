@@ -22,7 +22,7 @@ const HomeScreen = () => {
           <Carousel.Item interval={1000}>
             <img
               className="d-block w-100"
-              src='/images/crsl1.jpg'
+              src='/images/crsl6.jpg'
               alt="First slide"
             />
             <Carousel.Caption>
@@ -44,30 +44,8 @@ const HomeScreen = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src='/images/crsl3.jpg'
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
               src='/images/crsl4.jpg'
               alt="Fourth slide"
-            />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src='/images/crsl5.jpeg'
-              alt="Fifth slide"
             />
             <Carousel.Caption>
               <h3>Third slide label</h3>

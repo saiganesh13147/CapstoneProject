@@ -2,10 +2,7 @@ import mongoose from 'mongoose';
 
 const productSchema = mongoose.Schema({
     name: String,
-    image: { 
-        data: Buffer,
-        contentType: String 
-    },
+    image: String,
     description: String,
     brand: String,
     category: String,

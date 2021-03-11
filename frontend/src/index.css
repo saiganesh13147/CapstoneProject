@@ -27,3 +27,8 @@ h3 {
   overflow: hidden; */
   height: 400px;
 }
+#intro {
+  background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+  height: 100%;
+  width: 100%;
+}

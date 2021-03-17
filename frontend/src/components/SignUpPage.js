@@ -6,6 +6,14 @@ import { InputGroup } from 'react-bootstrap'
 import '../index.css'
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBIcon, MDBBtn } from 'mdbreact';
 
+
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
+const mic = new SpeechRecognition()
+
+mic.continuous = true
+mic.interimResults = true
+mic.lang = 'en-US'
+
 const SignUpPage = () => {
     const [validated, setValidated] = useState(false);
   
@@ -18,6 +26,47 @@ const SignUpPage = () => {
   
       setValidated(true);
     };
+
+    const [isListening, setIsListening ] = useState(false);
+    const [ input, setInput ] = useState(null);
+
+    useEffect(() => {
+        handleListen()
+    }, [isListening])
+
+const handleListen = () => {
+    if(isListening) {
+        mic.start()
+        mic.onend = () => {
+            console.log('continue..')
+            mic.start()
+        }
+    } else {
+        mic.stop()
+        mic.onend = () => {
+            console.log('Stopped mic on click')
+        }
+    }
+    mic.onstart = () => {
+        console.log('Mic is on..')
+    }
+
+
+    mic.onresult = event => {
+        const transcript = Array.from(event.results)
+        .map(result => result[0])
+        .map(result => result.transcript)
+        .join('')
+        console.log(transcript)
+        setInput(transcript)
+
+        mic.onerror = event => {
+            console.log(event.error)
+        }
+    }
+}
+
+
     return (
         // <div id="intro" class="bg-image shadow-2-strong">
 <MDBContainer className="mx-auto">
@@ -33,15 +82,27 @@ const SignUpPage = () => {
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Form.Row>
           <Form.Group as={Col} md="6" controlId="validationCustom01">
-            <Form.Label>First name</Form.Label>
+          <div className="inputWithButton">
+            <Form.Label>
+                First name
+            </Form.Label>
+            <Form.Label>
+            <Button id="iconBtn" variant="light" onClick={() => setIsListening(prevState => !prevState)}>
+                { isListening ? <span><MDBIcon icon="microphone" /></span> : <span><MDBIcon icon="microphone-slash" /></span>}
+                </Button>
+            </Form.Label>
+        </div>
+            
             <Form.Control
               required
               type="text"
               placeholder="First name"
               defaultValue="Mark"
+              value={input}
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
+          
           <Form.Group as={Col} md="6" controlId="validationCustom02">
             <Form.Label>Last name</Form.Label>
             <Form.Control

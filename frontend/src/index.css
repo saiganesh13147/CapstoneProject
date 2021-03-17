@@ -32,3 +32,20 @@ h3 {
   height: 100%;
   width: 100%;
 }
+/* .inputWithButton {
+  position: relative;
+  height: 100%;
+  width : 100%;
+} */
+
+.inputWithButton Form{
+    width: 70%;
+    height: 25px;
+    padding-right: 60px;
+}
+
+/* .inputWithButton #iconBtn {
+  position: absolute;
+  right: 0;
+  top : 5px;
+} */

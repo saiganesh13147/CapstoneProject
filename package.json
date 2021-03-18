@@ -2,12 +2,19 @@
   "name": "capstone",
   "version": "1.0.0",
   "description": "MERN Sello MarketPlace",
+<<<<<<< HEAD
   "main": "index.js",
+=======
+  "main": "server.js",
+  "type": "module",
+>>>>>>> 8df25467aa8b2572f36dfa201a47ea3ef4d3b388
   "scripts": {
     "start": "node backend/server",
-    "server" : "nodemon backend/server",
-    "client" : "npm start --prefix frontend"
-
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": {
     "type": "git",
@@ -20,7 +27,12 @@
   },
   "homepage": "https://github.com/saiganesh13147/CapstoneProject#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.12.0"
   },
   "devDependencies": {
     "concurrently": "^6.0.0",

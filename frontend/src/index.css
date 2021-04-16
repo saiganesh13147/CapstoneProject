@@ -11,6 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+:root {
+  --mainDark: #343a40;
+  --mainGrey: rgba(109, 109, 109);
+  --mainGrey: rgba(172, 172, 172);
+  --mainWhite: #fff;
+  --mainBlue: #007bff;
+}
 main {
   min-height: 80vh;
 }
@@ -24,4 +31,11 @@ h1 {
 }
 .rating span {
   margin: 0.1rem;
+}
+.fl-page-bar .fl-social-icons {
+  margin: 10px 0 5px 0;
+}
+.fl-page-bar .fl-social-icons i.fab {
+  font-size: 10px;
+  width: 10px !important;
 }

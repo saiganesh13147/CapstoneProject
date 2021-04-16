@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
+import Image from 'react-bootstrap/Image'
 import {
   Navbar,
   Nav,
@@ -24,14 +25,28 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar bg='warning' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>Sello MarketPlace</Navbar.Brand>
+            <Navbar.Brand>
+            
+      <Image style={{width: 55, height:'auto'}} src='/images/logo2.png' rounded />
+    
+              Sello MarketPlace
+              </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
+          
             <Nav className='ml-auto'>
+            <Form inline>
+              <FormControl
+                type='text'
+                placeholder='Search'
+                className='mr-sm-6'
+              />
+              <Button variant='warning' ><i className="fas fa-search"></i></Button>
+            </Form>
               <LinkContainer to='/cart'>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i>Cart
@@ -54,14 +69,7 @@ const Header = () => {
                 </LinkContainer>
               )}
             </Nav>
-            <Form inline>
-              <FormControl
-                type='text'
-                placeholder='Search'
-                className='mr-sm-2'
-              />
-              <Button variant='outline-success'>Search</Button>
-            </Form>
+           
           </Navbar.Collapse>
         </Container>
       </Navbar>

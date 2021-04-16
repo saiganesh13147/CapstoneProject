@@ -45,10 +45,10 @@ const Footer = () => {
                 <div className="col-sm-3 col-md-3">
                   <h4>Social</h4>
                   <ul className="list-unstyled">
-                    <li><a href="https://facebook.com/"><SocialIcon url="https://facebook.com/in/jaketrent" />Facebook</a></li>
-                    <li><a href="https://instagram.com"><SocialIcon url="https://instagram.com/in/jaketrent" />Instagram</a></li>
-                    <li><a href="https://youtube.com/"><SocialIcon url="https://youtube.com/in/jaketrent" />Youtube</a></li>
-                    <li><a href="https://twitter.com/"><SocialIcon url="https://twitter.com/jaketrent" />Twitter</a></li>
+                    <li><a href="https://facebook.com/"><SocialIcon url="https://facebook.com/in/" />Facebook</a></li>
+                    <li><a href="https://instagram.com"><SocialIcon url="https://instagram.com/in/" />Instagram</a></li>
+                    <li><a href="https://youtube.com/"><SocialIcon url="https://youtube.com/in/" />Youtube</a></li>
+                    <li><a href="https://twitter.com/"><SocialIcon url="https://twitter.com/" />Twitter</a></li>
                   </ul>
                 </div>
               </div>
@@ -70,17 +70,17 @@ export default Footer
 
 const FooterContainer = styled.footer`
 .footer-middle {
-  background: var(--mainDark);
+  background: var(--mainBg);
   padding-top: 3rem;
   color: var(--mainWhite);
 }
 
 ul li a {
-  color: var(--mainGrey);
+  color: var(--mainWhite);
 }
 
 ul li a:hover {
-  color: var(--mainLightGrey);
+  color: var(--Black);
 }
 
 

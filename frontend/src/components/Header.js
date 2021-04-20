@@ -29,24 +29,27 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-            
-      <Image style={{width: 55, height:'auto'}} src='/images/logo2.png' rounded />
-    
+              <Image
+                style={{ width: 55, height: 'auto' }}
+                src='/images/logo2.png'
+                rounded
+              />
               Sello MarketPlace
-              </Navbar.Brand>
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-          
             <Nav className='ml-auto'>
-            <Form inline>
-              <FormControl
-                type='text'
-                placeholder='Search'
-                className='mr-sm-6'
-              />
-              <Button variant='warning' ><i className="fas fa-search"></i></Button>
-            </Form>
+              <Form inline>
+                <FormControl
+                  type='text'
+                  placeholder='Search'
+                  className='mr-sm-6'
+                />
+                <Button variant='warning'>
+                  <i className='fas fa-search'></i>
+                </Button>
+              </Form>
               <LinkContainer to='/cart'>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i>Cart
@@ -68,8 +71,20 @@ const Header = () => {
                   </Nav.Link>
                 </LinkContainer>
               )}
+              {userInfo && userInfo.isAdmin && (
+                <NavDropdown title='Admin' id='adminmenu'>
+                  <LinkContainer to='/admin/userlist'>
+                    <NavDropdown.Item>Users</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to='/admin/productlist'>
+                    <NavDropdown.Item>Products</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to='/admin/orderlist'>
+                    <NavDropdown.Item>Orders</NavDropdown.Item>
+                  </LinkContainer>
+                </NavDropdown>
+              )}
             </Nav>
-           
           </Navbar.Collapse>
         </Container>
       </Navbar>

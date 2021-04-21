@@ -4,7 +4,6 @@ import {
   addOrderItems,
   getOrderById,
   updateOrderToPaid,
-  updateOrderToDelivered,
   getMyOrders,
   getOrders,
 } from '../controllers/orderController.js'

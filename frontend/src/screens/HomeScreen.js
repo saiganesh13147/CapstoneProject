@@ -31,7 +31,7 @@ const HomeScreen = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="/images/Carsl1.jpg"
+      src="/images/crsl1.png"
       alt="First slide"
        style={{width: 'auto', height:'auto'}}
     />
@@ -43,7 +43,7 @@ const HomeScreen = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="/images/Carsl2.jpg"
+      src="/images/crsl2.png"
       alt="Second slide"
     />
 
@@ -52,18 +52,8 @@ const HomeScreen = () => {
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="/images/Carsl3.jpg"
-      alt="Third slide"
-    />
 
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
+  
 </Carousel>
       <h1>Products </h1>
       {loading ? (

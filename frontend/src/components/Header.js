@@ -30,14 +30,18 @@ const Header = () => {
           <LinkContainer to='/'>
             <Navbar.Brand>
             
-      <Image style={{width: 55, height:'auto'}} src='/images/logo2.png' rounded />
+      {/* <Image style={{width: 55, height:'auto'}} src='/images/logo2.png' rounded /> */}
     
               Sello MarketPlace
               </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Nav className="mr-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#products">Products</Nav.Link>
+      <Nav.Link href="#aboutUs">About Us</Nav.Link>
+    </Nav>
           <Navbar.Collapse id='basic-navbar-nav'>
-          
             <Nav className='ml-auto'>
             <Form inline>
               <FormControl

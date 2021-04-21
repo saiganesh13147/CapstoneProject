@@ -26,19 +26,17 @@ const Footer = () => {
                 <div className="col-sm-3 col-md-3">
                   <h4>About Us</h4>
                   <ul className="list-unstyled">
-                    <li><a href="/">Story</a></li>
-                    <li><a href="/">Clients</a></li>
+                    <li><a href="/">About Sello</a></li>
+                    <li><a href="/">FAQ</a></li>
                     <li><a href="/">Testimonials</a></li>
                   </ul>
                 </div>
                 {/* Column 3 */}
                 <div className="col-sm-3 col-md-3">
-                  <h4>Services</h4>
+                  <h4>Contact Us</h4>
                   <ul className="list-unstyled">
-                    <li><a href="/">Marketing</a></li>
-                    <li><a href="/">Consulting</a></li>
-                    <li><a href="/">Development</a></li>
-                    <li><a href="/">Design</a></li>
+                    <li><a href="/">Get in touch</a></li>
+                    
                   </ul>
                 </div>
                 {/* Column 4 */}

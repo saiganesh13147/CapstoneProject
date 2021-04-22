@@ -50,6 +50,11 @@ const Header = () => {
                   <i className='fas fa-search'></i>
                 </Button>
               </Form>
+              <LinkContainer to='/contactus'>
+                <Nav.Link>
+                  <i className='fas fa-shopping-cart'></i>Contact Us
+                </Nav.Link>
+              </LinkContainer>
               <LinkContainer to='/cart'>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i>Cart

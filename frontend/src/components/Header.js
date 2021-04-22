@@ -11,6 +11,7 @@ import {
   FormControl,
   Container,
 } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { logout } from '../actions/userActions'
 
 const Header = () => {
@@ -52,7 +53,7 @@ const Header = () => {
               </Form>
               <LinkContainer to='/contactus'>
                 <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i>Contact Us
+                  <i className='ml-auto'></i>About Us
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to='/cart'>

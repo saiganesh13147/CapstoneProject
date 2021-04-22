@@ -97,16 +97,16 @@ export default Footer
 
 const FooterContainer = styled.footer`
   .footer-middle {
-    background: var(--mainDark);
+    background: var(--mainGrey);
     padding-top: 3rem;
     color: var(--mainWhite);
   }
 
   ul li a {
-    color: var(--mainGrey);
+    color: var(--mainLightGrey);
   }
 
   ul li a:hover {
-    color: var(--mainLightGrey);
+    color: var(--mainWhite);
   }
 `

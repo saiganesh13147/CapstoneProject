@@ -5,6 +5,7 @@ import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { listProducts } from '../actions/productActions'
+import VMC from '../components/VMC'
 
 
 const HomeScreen = () => {
@@ -55,6 +56,7 @@ const HomeScreen = () => {
 
   
 </Carousel>
+<VMC />
       <h1>Products </h1>
       {loading ? (
         <Loader />

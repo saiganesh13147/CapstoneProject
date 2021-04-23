@@ -12,8 +12,6 @@ import {
 import { PRODUCT_CREATE_RESET } from '../constants/productConstants'
 
 const ProductListScreen = ({ history, match }) => {
-  //   const pageNumber = match.params.pageNumber || 1
-
   const dispatch = useDispatch()
 
   const productList = useSelector((state) => state.productList)
@@ -127,7 +125,6 @@ const ProductListScreen = ({ history, match }) => {
               ))}
             </tbody>
           </Table>
-          {/* <Paginate pages={pages} page={page} isAdmin={true} /> */}
         </>
       )}
     </>

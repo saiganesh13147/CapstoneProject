@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { listUsers, deleteUser } from '../actions/userActions'
+import MetaTag from '../components/MetaTag'
 
 const UserScreen = ({ history }) => {
   const dispatch = useDispatch()
@@ -36,6 +37,7 @@ const UserScreen = ({ history }) => {
 
   return (
     <>
+      <MetaTag title={'Sello Users'} />
       <h1>Users</h1>
       {loading ? (
         <Loader />

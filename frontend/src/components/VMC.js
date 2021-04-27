@@ -13,25 +13,22 @@ const VMC = () => {
               <div className="col-md-4 text-center">
                 <h6>Our Vision</h6>
                 <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                “To be Earth’s most customer-centric company, where customers can find and discover anything they might want to buy online.”
+                 The firm's main focus is to offer its customers the lowest possible prices and the sellers, the easiest platform to sell their products. Essentially, this means that Sello wishes to be the one-stop-shop for customer satisfaction globally.
                 </p>
               </div>
               <div className="col-md-4 text-center">
                 <h6>Our Mission</h6>
                 <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                “To serve consumers through online and physical stores and focus on selection, price, and convenience.”
+                 This means that anyone shopping on Sello should expect service beyond merely getting what he or she wants.
                 </p>
               </div>
               <div className="col-md-4 text-center">
                 <h6>Our Core Values</h6>
                 <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                The core values of our company is customer obsession. Sello wants to make everything as simple as it is possible.
+                Insist on highest values, earn trust, Deliver Results.
                 </p>
               </div>
           </div>
